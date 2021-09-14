@@ -1,0 +1,127 @@
+*{
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    background: linear-gradient(to right, black, rgb(39, 37, 37));
+    
+}
+.titulo h1{
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+    font-weight:400;
+    font-size: 25px;
+    
+}
+header{
+    width: 100%;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.container img{
+    width: 250px;
+    animation-name: balloon;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+   
+}
+.titulo{
+    width: 400px;
+    margin-top: 100px;
+    background: rgb(0, 196, 130);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    border-bottom: 1px solid gray;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+.container{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.btn1{
+    width: 200px;
+    height: 60px;
+    background:rgb(255, 251, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 18px;
+    float: right;
+    transition-duration: 1s;
+
+}
+.btn1:hover{
+    transform: scale(1.1, 1.1);
+    transition-duration: 1s;
+
+}
+.list{
+    
+        
+   font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btnSub button{
+    width: 200px;
+    height: 40px;
+    margin-top: 150px;
+    background: rgb(255, 115, 1);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+   border-radius: 25px;
+    
+}
+.btnSub{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ol li{
+   
+    margin: 10px;
+    padding: 5px;
+}
+.dos img{
+    width: 180px;
+}
+
+@keyframes balloon{
+    0%{margin-top: -200px;
+    margin-right: 200px }
+    25%{
+        margin-top: -100px;
+    margin-right: 300px
+    }
+50%{ margin-top: -200px;
+    margin-right: 380px}
+    75%{
+        margin-top: -100px;
+        margin-right: 460px;
+    }
+    100%{
+        margin-top: -200px;
+        margin-right: 550px;
+    }
+}
